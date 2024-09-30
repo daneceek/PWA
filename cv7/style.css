@@ -1,0 +1,33 @@
+.grid{
+    background-color: aqua;
+    gap: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr ; 
+}
+.grid > div{
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(215, 246, 250);
+}
+.one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.three{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.nine{
+    display: none;
+}
+.eight{
+    display: none;
+}
+/* .one {
+    grid-column:1 ;
+    grid-row:1 ;
+}
+.two{
+
+} */
