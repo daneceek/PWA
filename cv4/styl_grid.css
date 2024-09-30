@@ -1,0 +1,111 @@
+nav, aside {
+    min-height: 150px;
+}
+header, footer {
+    min-height: 100px;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+header {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: darkorange;
+}
+nav {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: darkseagreen;
+    border: 2px black solid;
+}
+main {
+    grid-column: 1;
+    grid-row: 3;
+}
+aside {
+    grid-column: 1;
+    grid-row: 4;
+    background-color: rgb(9, 82, 9);
+}
+footer {
+    grid-column: 1;
+    grid-row: 5;
+    background-color: rgb(235, 196, 148);
+}
+
+@media all and (min-width: 461px) {
+
+    nav, aside {
+        min-height: 150px;
+    }
+    header, footer {
+        min-height: 100px;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    header {
+        grid-column: 1/3;
+        grid-row: 1;
+        background-color: darkorange;
+    }
+    nav {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: darkseagreen;
+    }
+    main {
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+    aside {
+        grid-column: 2;
+        grid-row: 2;
+        background-color: rgb(9, 82, 9);
+    }
+    footer {
+        grid-column: 1/3;
+        grid-row: 4;
+        background-color: rgb(235, 196, 148);
+    }    
+}
+
+@media all and (min-width: 1000px) {
+
+    nav, aside {
+        min-height: 150px;
+    }
+    header, footer {
+        min-height: 100px;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 200px 3fr 1fr;
+    }
+    header {
+        grid-column: 1/4;
+        grid-row: 1;
+        background-color: darkorange;
+    }
+    nav {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: darkseagreen;
+    }
+    main {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    aside {
+        grid-column: 3;
+        grid-row: 2;
+        background-color: rgb(9, 82, 9);
+    }
+    footer {
+        grid-column: 1/4;
+        grid-row: 3;
+        background-color: rgb(235, 196, 148);
+    }    
+}

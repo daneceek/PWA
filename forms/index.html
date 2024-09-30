@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Jméno:</td>
+                <td><input required type="text" name="jmeno" placeholder="Jan novák" size="10" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td>Heslo:</td>
+                <td><input required type="password" name="heslo" id="" placeholder="Jan novák" size="10" maxlength="5"></td>
+            </tr>
+            
+            <tr>
+                <td>Přepínač možností</td>
+                <td>
+                    <fieldset>
+                        <input type="radio" name="skupina1" id="" value="1">Text u první možnosti <br>
+                        <input type="radio" name="skupina1" id="" value="2">Text u druhé možnosti <br>
+                        <input type="radio" name="skupina2" id="" value="3">Text u třetí možnosti     <br>            
+                        <input type="radio" name="skupina2" id="" value="3">Text u třetí možnosti                 
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Zaškrtávací tlačítko</td>
+                <td><input type="checkbox" name="pole1" id=""></td>
+            </tr>
+            <tr>
+                <td>Číselník</td>
+                <td><input type="number" name="ciselnik" id="" value="0" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Rozbalovací seznam</td>
+                <td><select name="seznam" id="">
+                    <option value="r">Red</option>
+                    <option value="g">Green</option>
+                    <option value="b">Blue</option>
+                    <option value="y">Yellow</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Víceřádkový text</td>
+                <td>
+                    <textarea name="text" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Přiložit soubor:</td>
+                <td>
+                    <input type="file" id="" name="soubor">
+                </td>
+            </tr>
+            <tr>
+                <td>Barva</td>
+                <td><input type="color" name="barva" id=""></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="submit" type="submit" value="Odeslat"></td>
+            </tr>
+            
+        </table>
+
+    </form>
+</body>
+</html>

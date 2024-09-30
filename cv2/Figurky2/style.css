@@ -1,0 +1,45 @@
+h1 {
+    color: red;
+    font-size: 36px;
+}
+
+.pink-text p {
+    color: pink;
+    font-size: 18px;
+
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: green;
+}
+
+.containter {
+    display: flex;
+    flex-direction: row;
+}
+
+.containter div.projekt {
+    border: 1px black solid;
+    margin-right: 15px;
+    padding: 10px 5px 10px 5px;
+}
+
+.containter .projekt:nth-child(odd) > p {
+    color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+

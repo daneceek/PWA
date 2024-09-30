@@ -1,0 +1,31 @@
+*{
+   padding: 0;
+   margin: 0; 
+   box-sizing: border-box;
+}
+form{
+    border: 1px solid black;
+    width: fit-content;
+}
+form h1{
+    text-align: center;
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.order{
+    height: 70px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit{
+    padding: 2px;
+}
+fieldset {
+    padding: 8px;
+}
+textarea{resize: none;}

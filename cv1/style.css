@@ -1,0 +1,40 @@
+table{
+    
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black; /* Černé ohraničení kolem tabulky, hlaviček i buněk */
+}
+.top{
+    text-align: center;
+    vertical-align: top;
+}
+.right{
+    text-align: right;
+}
+.right.top{
+    vertical-align: top;
+}
+.right.bottom{
+    text-align: right;
+    vertical-align: bottom;
+}
+.center{
+    text-align: center;
+}
+.bottom{
+    text-align: center;
+    vertical-align: bottom;
+}
+.left.bottom{
+    vertical-align: bottom;
+    text-align: left;
+}
+.left.top{
+    vertical-align: top;
+    text-align: left;
+}
+td{
+    width: 60px;
+    height: 60px;
+}
