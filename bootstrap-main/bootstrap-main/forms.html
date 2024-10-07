@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komplexní příklad Bootstrap formuláře</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="text-center">Komplexní formulář v Bootstrapu</h1>
+
+    <!-- Formulář -->
+    <form>
+      <!-- Textové pole - jméno -->
+      <div class="form-group">
+        <label for="inputName">Jméno</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Zadejte své jméno" required>
+        <div class="invalid-feedback">Zadejte prosím své jméno.</div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="inputEmail">Emailová adresa</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Zadejte email" required>
+        <div class="invalid-feedback">Zadejte platnou emailovou adresu.</div>
+      </div>
+
+      <!-- Heslo -->
+      <div class="form-group">
+        <label for="inputPassword">Heslo</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Zadejte heslo" required>
+        <div class="invalid-feedback">Zadejte heslo.</div>
+      </div>
+
+      <!-- Pole pro telefonní číslo -->
+      <div class="form-group">
+        <label for="inputPhone">Telefonní číslo</label>
+        <input type="tel" class="form-control" id="inputPhone" placeholder="Zadejte telefonní číslo">
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label for="textareaMessage">Zpráva</label>
+        <textarea class="form-control" id="textareaMessage" rows="3" placeholder="Napište nám svou zprávu"></textarea>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="checkTerms">
+        <label class="form-check-label" for="checkTerms">Souhlasím s podmínkami</label>
+      </div>
+
+      <!-- Radio tlačítka -->
+      <div class="form-group">
+        <label>Pohlaví</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="radioMale" value="male" checked>
+          <label class="form-check-label" for="radioMale">Muž</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="radioFemale" value="female">
+          <label class="form-check-label" for="radioFemale">Žena</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="radioOther" value="other">
+          <label class="form-check-label" for="radioOther">Jiné</label>
+        </div>
+      </div>
+
+      <!-- Select (Dropdown) -->
+      <div class="form-group">
+        <label for="selectCountry">Země</label>
+        <select class="form-control" id="selectCountry" required>
+          <option value="" disabled selected>Vyberte zemi</option>
+          <option value="CZ">Česká republika</option>
+          <option value="SK">Slovensko</option>
+          <option value="PL">Polsko</option>
+          <option value="DE">Německo</option>
+        </select>
+        <div class="invalid-feedback">Vyberte prosím svou zemi.</div>
+      </div>
+
+      <!-- Skupina vstupů (Input Group) -->
+      <div class="form-group">
+        <label for="inputPrice">Cena</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Kč</span>
+          </div>
+          <input type="number" class="form-control" id="inputPrice" placeholder="Zadejte částku">
+        </div>
+      </div>
+
+      <!-- Přepínač (Switch) -->
+      <div class="form-group">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="switchNewsletter">
+          <label class="form-check-label" for="switchNewsletter">Chcete dostávat novinky?</label>
+        </div>
+      </div>
+
+      <!-- Pole pro nahrávání souborů -->
+      <div class="form-group">
+        <label for="fileUpload">Nahrajte soubor</label>
+        <input type="file" class="form-control-file" id="fileUpload">
+      </div>
+
+      <!-- Datum a čas -->
+      <div class="form-group">
+        <label for="inputDate">Datum</label>
+        <input type="date" class="form-control" id="inputDate">
+      </div>
+
+      <!-- Základní tlačítko odeslání -->
+      <button type="submit" class="btn btn-primary">Odeslat</button>
+    </form>
+
+  </div>
+
+  <!-- Bootstrap JS a jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Volitelně: JS validace -->
+  <script>
+    // Příklad klientské validace formuláře
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+</body>
+</html>

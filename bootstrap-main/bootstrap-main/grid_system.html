@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komplexní příklad Bootstrap Grid systému</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Nadpis -->
+    <h1 class="text-center my-4">Komplexní příklad Bootstrap Grid systému</h1>
+
+    <!-- Grid - kombinace velikostí sloupců -->
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-8 bg-light p-3">
+        Velký sloupec na mobilních zařízeních, polovinu na malých a 8/12 na středních obrazovkách
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 bg-secondary text-white p-3">
+        Menší sloupec (4/12 na středních obrazovkách)
+      </div>
+    </div>
+
+    <!-- Grid s odsazením (offset) -->
+    <div class="row mt-4">
+      <div class="col-md-4 bg-info text-white p-3">
+        Sloupec 1 (4/12)
+      </div>
+      <div class="col-md-4 offset-md-4 bg-warning p-3">
+        Sloupec 2 (odsazen o 4/12)
+      </div>
+    </div>
+
+    <!-- Grid se zarovnáním a flexibilním přizpůsobením -->
+    <div class="row mt-4 justify-content-center">
+      <div class="col-sm-4 bg-success text-white p-3">
+        Zarovnaný středový sloupec (4/12)
+      </div>
+    </div>
+
+    <!-- Grid s nestejnými výškami (flexbox) -->
+    <div class="row mt-4 align-items-stretch">
+      <div class="col-md-6 d-flex bg-primary text-white p-3">
+        Sloupec s fixní výškou, který se přizpůsobí obsahu
+      </div>
+      <div class="col-md-6 bg-dark text-white p-3">
+        <div class="d-flex flex-column justify-content-center h-100">
+          Sloupec s obsahem vertikálně zarovnaným uprostřed
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid s více řádky a responsivitou -->
+    <div class="row mt-4">
+      <div class="col-lg-3 col-md-6 bg-danger text-white p-3">
+        1. Sloupec (3/12 na velkých obrazovkách, 6/12 na středních)
+      </div>
+      <div class="col-lg-3 col-md-6 bg-info text-white p-3">
+        2. Sloupec (3/12 na velkých obrazovkách, 6/12 na středních)
+      </div>
+      <div class="col-lg-3 col-md-6 bg-warning text-white p-3">
+        3. Sloupec (3/12 na velkých obrazovkách, 6/12 na středních)
+      </div>
+      <div class="col-lg-3 col-md-6 bg-success text-white p-3">
+        4. Sloupec (3/12 na velkých obrazovkách, 6/12 na středních)
+      </div>
+    </div>
+
+    <!-- Grid s různými typy obsahu -->
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="https://via.placeholder.com/150" alt="Obrázek">
+          <div class="card-body">
+            <h5 class="card-title">Karta s obrázkem</h5>
+            <p class="card-text">Toto je ukázkový text uvnitř karty, který ukazuje, jak můžete využít Bootstrap pro složitější rozvržení.</p>
+            <a href="#" class="btn btn-primary">Tlačítko</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item">První položka</li>
+          <li class="list-group-item">Druhá položka</li>
+          <li class="list-group-item">Třetí položka</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS a jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

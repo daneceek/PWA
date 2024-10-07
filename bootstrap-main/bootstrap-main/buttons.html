@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komplexní příklad tlačítek v Bootstrapu</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center my-4">Ukázka různých Bootstrap tlačítek</h1>
+
+    <!-- Základní tlačítka s různými barvami -->
+    <div class="mb-4">
+      <h3>Základní tlačítka</h3>
+      <button type="button" class="btn btn-primary">Primární</button>
+      <button type="button" class="btn btn-secondary">Sekundární</button>
+      <button type="button" class="btn btn-success">Úspěch</button>
+      <button type="button" class="btn btn-danger">Nebezpečí</button>
+      <button type="button" class="btn btn-warning">Varování</button>
+      <button type="button" class="btn btn-info">Informace</button>
+      <button type="button" class="btn btn-light">Světlo</button>
+      <button type="button" class="btn btn-dark">Tma</button>
+    </div>
+
+    <!-- Tlačítka s různými velikostmi -->
+    <div class="mb-4">
+      <h3>Tlačítka s různými velikostmi</h3>
+      <button type="button" class="btn btn-primary btn-lg">Velké tlačítko</button>
+      <button type="button" class="btn btn-secondary btn-sm">Malé tlačítko</button>
+    </div>
+
+    <!-- Aktivní a deaktivovaná tlačítka -->
+    <div class="mb-4">
+      <h3>Aktivní a deaktivovaná tlačítka</h3>
+      <button type="button" class="btn btn-primary active" aria-pressed="true">Aktivní tlačítko</button>
+      <button type="button" class="btn btn-secondary" disabled>Deaktivované tlačítko</button>
+    </div>
+
+    <!-- Odkazy jako tlačítka -->
+    <div class="mb-4">
+      <h3>Odkazy stylované jako tlačítka</h3>
+      <a href="#" class="btn btn-primary">Odkaz jako tlačítko</a>
+      <a href="#" class="btn btn-danger">Nebezpečný odkaz</a>
+    </div>
+
+    <!-- Bloková tlačítka (celá šířka) -->
+    <div class="mb-4">
+      <h3>Bloková tlačítka</h3>
+      <button type="button" class="btn btn-primary btn-block">Blokové tlačítko</button>
+      <button type="button" class="btn btn-success btn-block">Další blokové tlačítko</button>
+    </div>
+
+    <!-- Skupiny tlačítek -->
+    <div class="mb-4">
+      <h3>Skupiny tlačítek</h3>
+      <div class="btn-group" role="group" aria-label="Skupina tlačítek">
+        <button type="button" class="btn btn-primary">Levý</button>
+        <button type="button" class="btn btn-primary">Střední</button>
+        <button type="button" class="btn btn-primary">Pravý</button>
+      </div>
+    </div>
+
+    <!-- Tlačítka ve skupině na celou šířku -->
+    <div class="mb-4">
+      <h3>Skupina tlačítek na celou šířku</h3>
+      <div class="btn-group btn-group-lg btn-block" role="group" aria-label="Skupina tlačítek">
+        <button type="button" class="btn btn-danger">Velké tlačítko 1</button>
+        <button type="button" class="btn btn-danger">Velké tlačítko 2</button>
+        <button type="button" class="btn btn-danger">Velké tlačítko 3</button>
+      </div>
+    </div>
+
+    <!-- Dropdown tlačítka -->
+    <div class="mb-4">
+      <h3>Dropdown tlačítka</h3>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown tlačítko
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Akce 1</a>
+          <a class="dropdown-item" href="#">Akce 2</a>
+          <a class="dropdown-item" href="#">Akce 3</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Bootstrap JS a jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

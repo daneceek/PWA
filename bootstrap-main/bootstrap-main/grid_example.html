@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Nastavení gridu pro celé tělo stránky */
+
+        .layout {
+            display: grid;
+            grid-template-columns:2fr 5fr 2fr;
+            grid-template-rows: 1fr 1fr 4fr 1fr;
+            grid-template-areas:
+                "logo header header"
+                "banner1 nav banner2"
+                "banner1 main banner2"
+                "footer footer footer";
+            height: 100vh;
+            gap: 5px;
+            padding: 10px;
+
+        }
+
+        .logo {
+            grid-area: logo;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #4c60af;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+
+        .banner1 {
+            grid-area: banner1;
+            background-color: #f90f0f;
+            padding: 15px;
+        }
+
+        .banner2 {
+            grid-area: banner2;
+            background-color: #f90f0f;
+            padding: 15px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #eaeaea;
+            padding: 15px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="layout">
+    <div class="logo">
+        <h1>Logo</h1>
+    </div>
+    <header>
+        <h1>Hlavička</h1>
+    </header>
+    <div class="banner1">
+        <h1>Banner 1</h1>
+    </div>
+    <nav>
+        <h1>Menu</h1>
+    </nav>
+    <main>
+        <h1>ObsahObsahObsahObsahObsah</h1>
+    </main>
+    <div class="banner2">
+        <h1>Banner 2</h1>
+    </div>
+    <footer>
+        <h1>Patička</h1>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 border" ></div>
+            <div class="col-9 border"></div>
+            <div class="col-2 border"></div>
+        </div>
+        <div class="row">
+            <div class="col-1 border"></div>
+            <div class="col-10 border">
+                <form>
+                    <!-- Textové pole - jméno -->
+                    <div class="form-group">
+                      <label for="inputName">Křestní jméno</label>
+                      <input type="text" class="form-control" id="inputName" placeholder="Zadejte své jméno" required>
+                      <div class="invalid-feedback">Zadejte prosím své jméno.</div>
+                    </div>
+              
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label for="inputSurname">Příjmení</label>
+                      <input type="text" class="form-control" id="inputSurname" placeholder="Zadejte email" required>
+                      <div class="invalid-feedback">Zadejte platnou emailovou adresu.</div>
+                    </div>
+              
+                    <!-- Heslo -->
+                   
+              
+                    <!-- Radio tlačítka -->
+                    <div class="form-group">
+                      <label>Jaká je vaše oblíbená barva?</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="radioMale" value="male" checked>
+                        <label class="form-check-label" for="radioMale">Červená</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="radioFemale" value="female">
+                        <label class="form-check-label" for="radioFemale">Modrá</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="radioOther" value="other">
+                        <label class="form-check-label" for="radioOther">Zelená</label>
+                      </div>
+                    </div>
+              
+                    <!-- Select (Dropdown) -->
+                    <div class="form-group">
+                      <label for="selectCountry">Ze které země pocházíš?</label>
+                      <select class="form-control" id="selectCountry" required>
+                        <option value="" disabled selected>Vyberte zemi</option>
+                        <option value="CZ">Česká republika</option>
+                        <option value="SK">Slovensko</option>
+                        <option value="PL">Polsko</option>
+                        <option value="DE">Německo</option>
+                      </select>
+                      <div class="invalid-feedback">Vyberte prosím svou zemi.</div>
+                    </div>
+                    <label for="inputHobbies">Jaké jsou vaše záliby?</label>
+                    <div id="inputHobbies" class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="checkTerms">
+                        <label class="form-check-label" for="checkTerms">Čtení</label>
+                      </div>
+
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="checkTerms">
+                        <label class="form-check-label" for="checkTerms">Sport</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="checkTerms">
+                        <label class="form-check-label" for="checkTerms">Cestování</label>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="textareaMessage">Další komentáře:</label>
+                        <textarea class="form-control" id="textareaMessage" rows="3" placeholder="Napište nám svou zprávu"></textarea>
+                      </div>
+                      <button style="margin-bottom: 15px;width: 100%; border: none;background-color: rgb(105, 142, 50);" type="submit" class="btn btn-primary">Odeslat</button>
+                
+                
+                
+                    
+                  </form>
+              
+            </div>
+            <div class="col-1 border"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 border"></div>
+            <div class="col-6 border"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ukázka CSS Grid</title>
+  <style>
+    /* Nastavení gridu pro celé tělo stránky */
+    body {
+      display: grid;
+      grid-template-columns: 1fr 3fr; /* Dvě sloupce: první je 1 frakce šířky, druhý 3 frakce */
+      grid-template-rows: 2fr 4fr 1fr; /* Tři řádky: dva automatické, poslední vyplní zbývající prostor */
+      grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+      height: 100vh; /* Plná výška okna */
+      gap: 10px; /* Mezera mezi gridovými položkami */
+      padding: 10px;
+    }
+
+    /* Přiřazení gridových oblastí */
+    header {
+      grid-area: header;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      grid-area: nav;
+      background-color: #f4f4f4;
+      padding: 15px;
+    }
+
+    main {
+      grid-area: main;
+      background-color: #eaeaea;
+      padding: 15px;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Responsivní úprava pro menší obrazovky */
+    @media (max-width: 600px) {
+      body {
+        grid-template-columns: 1fr; /* Jediný sloupec */
+        grid-template-areas:
+          "header"
+          "nav"
+          "main"
+          "footer";
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hlavička</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Odkaz 1</a></li>
+      <li><a href="#">Odkaz 2</a></li>
+      <li><a href="#">Odkaz 3</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Hlavní obsah</h2>
+    <p>Toto je hlavní oblast obsahu stránky, která zabírá více místa než navigační panel.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Můj Web</p>
+  </footer>
+
+</body>
+</html>
