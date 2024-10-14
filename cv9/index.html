@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="w-50">
+            <h2 class="text-center">Registrační formulář</h2>
+            <form action="">
+                <div class="form-group">
+                    <label for="inputName">Celé jméno</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Zadejte své jméno" required>
+                    <div class="invalid-feedback">Zadejte prosím své jméno.</div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">E-mailová adresa</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">Zadejte platnou emailovou adresu.</div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Heslo</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Heslo" required>
+                    <div class="invalid-feedback">Zadejte heslo.</div>
+                </div>
+                <div class="form-group">
+                    <label for="selectCountry">Země</label>
+                    <select class="form-control" id="selectCountry" required>
+                        <option value="CZ">Česká republika</option>
+                        <option value="SK">Slovensko</option>
+                        <option value="PL">Polsko</option>
+                        <option value="DE">Německo</option>
+                    </select>
+                    <div class="invalid-feedback">Vyberte prosím svou zemi.</div>
+                </div>
+                <div class="form-group">
+                    <label>Pohlaví</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="radioMale" value="male" checked>
+                        <label class="form-check-label" for="radioMale">Muž</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="radioFemale" value="female">
+                        <label class="form-check-label" for="radioFemale">Žena</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textareaMessage">Zpráva</label>
+                    <textarea class="form-control" id="textareaMessage" rows="3" placeholder="Sem napište svou zprávu"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="switchNewsletter" required>
+                        <label class="form-check-label" for="switchNewsletter">Souhlasím s obchodními podmínkami</label>
+                        <div class="invalid-feedback">Musíte souhlasit s obchodními podmínkami.</div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Poslat</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
