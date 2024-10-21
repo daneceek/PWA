@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" d-flex justify-content-center align-items-center">
+        <div class="w-50 border border-secondary">
+            <h2 class="text-center bg-primary text-white p-2">Registrační údaje</h2>
+            <form action="" class="p-2 ">
+                
+                <div class="form-group">
+                    <label for="inputName">Login:</label>
+                    <input type="text" class="form-control" id="inputName" required>
+                    <div class="invalid-feedback">Zadejte prosím přihlášovací jméno.</div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Heslo:</label>
+                    <input type="password" class="form-control" id="inputPassword" required>
+                    <div class="invalid-feedback">Zadejte heslo.</div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail" required>
+                    <div class="invalid-feedback">Zadejte platnou emailovou adresu.</div>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label>Typ účtu:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="acc-type" id="radioMale" value="male" checked>
+                        <label class="form-check-label" for="radioMale">Základní (zdarma)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="acc-type" id="radioFemale" value="female">
+                        <label class="form-check-label" for="radioFemale">Rozšířený (100 Kč / měsíc)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="acc-type" id="radioFemale" value="female">
+                        <label class="form-check-label" for="radioFemale">Neomezený (250 Kč / měsíc)</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="selectCountry">Stát</label>
+                    <select class="form-control" id="selectCountry" required>
+                        <option value="CZ">ČR</option>
+                        <option value="SK">SK</option>
+                        <option value="PL">PL</option>
+                        <option value="DE">DE</option>
+                    </select>
+                    <div class="invalid-feedback">Vyberte prosím svou zemi.</div>
+                </div>
+                <div class="form-group">
+                    <label for="textareaMessage">Poznámka:</label>
+                    <textarea class="form-control" id="textareaMessage" rows="3" placeholder="Předvyplněný text"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="switchNewsletter" required>
+                        <label class="form-check-label" for="switchNewsletter">Souhlasím s obchodními podmínkami</label>
+                        <div class="invalid-feedback">Musíte souhlasit s obchodními podmínkami.</div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="switchNewsletter" required>
+                        <label class="form-check-label" for="switchNewsletter">Souhlasím se zasíláním informačních emailů</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Provést registraci</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
