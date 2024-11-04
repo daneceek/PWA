@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+   
+    {% for item in clanky %}
+        <h1>{{item["nadpis"]}}</h1>
+        <h3>{{item["text"]}}</h3>
+        <h3>{{item["autor"]}}</h3>
+    {% endfor %}
+
+    
+{% endblock %}

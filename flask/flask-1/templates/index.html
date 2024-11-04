@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block page_title %}
+    {{text}}    
+{% endblock %}
+{% block content %}
+    <div>
+         <h2>Vítejte na stránkách</h2>
+         <p>Vítejte na stránkách mého nového projektu</p>
+    </div>
+    
+    {{cislo}} <br>
+    {{pole | length}}
+    {{pole | first}}
+    {{pole | last}}
+    {{text | length}}
+    <ul>
+        {% if pole | length > 0 %}
+    {% for number in pole %}
+        <li class="{% if number > 6 %}red{% endif %}">Číslo: {{ number }}</li>
+    {% endfor %}
+{% else %}
+    <li>nic tam neni</li>
+{% endif %}
+        
+    </ul>
+    
+{% endblock %}

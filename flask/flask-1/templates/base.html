@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>{% block page_title %}{% endblock %}</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    {% include 'menu.html'%}
+    <h1>Moje stránka</h1>
+    <div class="d-flex p-2 bd-highlight">
+        {% block content %}{% endblock %}
+    </div>
+   
+</body>
+</html>
