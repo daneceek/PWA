@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template, url_for
 
 app = Flask(__name__)
 @app.route("/")
@@ -55,7 +55,7 @@ def mocnina():
     </head>
     <body>
         <h1>Mocnina</h1>
-        <form action='/vypocet_mocniny' method='GET'>
+        <form action='/vypocet_mocniny' method='POST'>
             a = <input required type='text' name='a'> <br>
             x = <input required type='text' name='x'> <br>
             <input type='submit' value='Spočítat'>
@@ -67,11 +67,14 @@ def mocnina():
     """
     return vysledek
 
-@app.route("/vypocet_mocniny", methods= ["GET"])
+@app.route("/vypocet_mocniny", methods= ["GET", "POST"])
 def vypocet_mocniny():
     try:
-        a = request.args["a"]
-        x = request.args["x"]
+        # a = request.args["a"]
+        # x = request.args["x"]
+        # pro POST: 
+        a = request.form["a"]
+        x = request.form["x"]
     except:
         return "Error, data z formuláře nebyla správně předána!"
     try:
@@ -80,5 +83,13 @@ def vypocet_mocniny():
         return "Error, musíte zadat pouze čísla!"
     return f"{a} na {x} je {moc}"
 
+@app.route('/mocnina2')
+def mocnina2():
+    data = "miluju tento úžasný předmět"
+    return render_template("formular_mocnina.html", data=data)
+
 if __name__ == "__main__":
     app.run(debug=True)
+
+#POST - tajná data, větší množství
+#GET - malá data, nepodstatné, vetsinou nejake jedno cislo

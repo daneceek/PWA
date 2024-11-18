@@ -1,0 +1,66 @@
+/* par drobnosti aby mel nahled rozumne rozmery */
+
+header, footer {
+    min-height: 100px;
+}
+
+main {
+    min-height: 500px;
+}
+
+nav, aside {
+    min-height: 150px;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 200px 2fr 1fr;
+}
+
+header {
+    padding: 1em;
+    grid-column: 1/4; /* pres vsechny tri sloupce tj. od zacatku prvniho do "zacatku ctvrteho" = konce tretiho */
+    grid-row: 1;
+    background-color: aqua;
+}
+
+nav {
+    padding: 1em;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: chocolate;
+}
+
+main {
+    padding: 1em;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: white;
+}
+
+aside {
+    padding: 1em;
+    grid-column: 3;
+    grid-row: 2;
+    background-color: chocolate;
+}
+
+footer {
+    padding: 1em;
+    grid-column: 1/4;
+    grid-row: 3;
+    background-color: aqua;
+}
+
+.zelena {
+    color: green;
+}
+
+.cervena {
+    color: red;
+}
+a{
+    padding: 1em;
+    display: block;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styly.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <header>Hlavička</header>
+    <nav>
+        <p>Menu</p>
+        <a href="{{url_for('home')}}">Home</a>
+        <a href="{{url_for('o_nas')}}">O nás</a>
+        <a href="{{url_for('kontakt')}}">Kontakt</a>
+    </nav>
+    <aside>Boční panel s doplňkovými informacemi</aside>
+    <main>
+        {% block obsah %}
+        Zde bude hlavní obsah stránky...
+        {% endblock %}
+    </main>
+    <footer>&copy; Copyright 2024</footer>
+</body>
+</html>
