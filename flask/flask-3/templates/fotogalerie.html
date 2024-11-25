@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% block obsah %}
       <h1>Fotogalerie</h1>
-      
+      {% for file in files %}
+            <img src="static/img/{{file}}"><br>
+      {% endfor %}
 {% endblock %}

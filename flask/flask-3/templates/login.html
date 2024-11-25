@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block obsah %}
+    <h1>Přihlašování uživatele</h1>
+    <form action="{{url_for('login')}}" method="POST">
+        <input type="text" name="jmeno" placeholder="Uživatelské jméno"><br>
+        <input type="password" name="heslo" placeholder="Heslo">
+        <input type="submit" value="Přihlásit se">
+    </form>
+{% endblock %}
